@@ -48,7 +48,7 @@ function Shell({ children }) {
               {user.role === 'admin' ? 'Studio' : 'My learning'}
             </NavLink>
           )}
-          <a className="nav-about" href="/#approach" onClick={() => setOpen(false)}>Our approach</a>
+          <a className="nav-about" href={`${import.meta.env.BASE_URL}#approach`} onClick={() => setOpen(false)}>Our approach</a>
           {user ? (
             <button className="nav-signout" onClick={signOut}>Sign out</button>
           ) : (
@@ -544,7 +544,7 @@ function App() {
 }
 
 createRoot(document.getElementById('root')).render(
-  <BrowserRouter>
+  <BrowserRouter basename={import.meta.env.BASE_URL}>
     <App />
   </BrowserRouter>,
 );
