@@ -1,5 +1,5 @@
 # Cognevance Online Course Management System
-https://vercel.com/srujanasharma/cognevance-online-course-management-system
+https://cognevance-online-course-management-kohl.vercel.app
 
 A full-stack Level 2 project for managing online courses, users, enrollments, and learning progress.
 
